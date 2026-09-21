@@ -8,7 +8,7 @@
   <meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
   <title>똑… 똑… 똑… | 한유정 캐릭터 설정서</title>
   <meta name="description" content="머더 미스터리 똑… 똑… 똑… 한유정 전용 모바일 캐릭터 설정서">
-  <link rel="stylesheet" href="style.css?v=reader-tutorial-1">
+  <link rel="stylesheet" href="style.css?v=feedback-20260920">
 </head>
 <body class="is-locked">
   <span class="page-top-anchor" id="pageTop" aria-hidden="true"></span>
@@ -77,7 +77,7 @@
     <button class="map-modal__backdrop" id="mapBackdrop" type="button" tabindex="-1" aria-label="지도 닫기"></button>
     <section class="map-modal__panel" role="dialog" aria-modal="true" aria-labelledby="mapTitle">
       <header class="map-modal__header">
-        <div><span>TRAINING CENTER</span><h2 id="mapTitle">수련원 MAP</h2></div>
+        <div><span id="mapCounter">MAP 1 / 2</span><h2 id="mapTitle" aria-live="polite">수련원 지도</h2></div>
         <button id="mapClose" type="button">닫기</button>
       </header>
       <div class="map-toolbar" aria-label="지도 확대 설정">
@@ -89,7 +89,21 @@
       <div class="map-viewport" id="mapViewport" tabindex="0" aria-label="확대된 지도를 스크롤하여 확인">
         <img id="mapImage" src="map.png" alt="수련원 실외시설과 실내시설의 방 및 이동 구조를 보여 주는 지도" draggable="false">
       </div>
-      <p class="map-hint">확대 후 지도를 위아래·좌우로 움직여 확인하세요.</p>
+      <footer class="map-gallery-footer">
+        <div class="map-thumbnails" role="group" aria-label="지도 선택">
+          <button class="map-thumbnail" type="button" data-map-src="map.png" data-map-title="수련원 지도" data-map-alt="수련원 실외시설과 실내시설의 방 및 이동 구조를 보여 주는 지도" aria-label="수련원 지도 보기" aria-pressed="true" aria-controls="mapViewport">
+            <img src="map.png" alt="" width="56" height="48" loading="lazy" draggable="false">
+            <span class="map-thumbnail__label">수련원 지도</span>
+            <span class="map-thumbnail__check" aria-hidden="true">✓</span>
+          </button>
+          <button class="map-thumbnail" type="button" data-map-src="bed-layout.png" data-map-title="수련생방 침대 배치도" data-map-alt="수련생방 침대 배치도. 왼쪽 위는 서은찬, 왼쪽 아래는 김하준, 오른쪽은 민도겸, 아래쪽 가로 침대는 강태민. 창문은 위쪽, 출입문은 오른쪽 위에 있다." aria-label="수련생방 침대 배치도 보기" aria-pressed="false" aria-controls="mapViewport">
+            <img src="bed-layout.png" alt="" width="56" height="48" loading="lazy" draggable="false">
+            <span class="map-thumbnail__label">침대 배치도</span>
+            <span class="map-thumbnail__check" aria-hidden="true">✓</span>
+          </button>
+        </div>
+        <p class="map-hint">미리보기를 누르면 지도가 바뀝니다.<br>확대 후에는 위아래·좌우로 움직여 확인하세요.</p>
+      </footer>
     </section>
   </aside>
 
@@ -97,7 +111,7 @@
     <section class="character-hero" aria-labelledby="characterName">
       <p class="character-hero__eyebrow">CHARACTER 04 · PRIVATE</p>
       <h2 id="characterName">한유정</h2>
-      <p class="character-hero__role">28세 · 여성 · 태권도장 사범</p>
+      <p class="character-hero__role">28세 · 여성 · 태권도장 사범 겸 선수</p>
       <p class="character-hero__lead">“좋은 뜻으로 시작한 장난은, 돌아갈 수 없는 선택이 되었다.”</p>
       <div class="privacy-note">
         <strong>다른 플레이어에게 보여주지 마세요.</strong>
@@ -111,9 +125,9 @@
         <div><p>AT A GLANCE</p><h2>인물 소개</h2></div>
       </div>
       <div class="profile-grid">
-        <article><span>도장 안에서의 모습</span><strong>수련생들을 가장 가까이 돌보는 사범</strong><p>좋은 사범으로 인정받고 싶었다. 아이들의 불편한 관계를 알면서도 시간이 해결해 주길 기대했다.</p></article>
-        <article><span>김하준과의 관계</span><strong>상태를 확인하지 않고 돌아선 어른</strong><p>사고 직후 숨과 맥을 확인해야 한다는 사실을 알면서도, 죽었다고 단정해야 도망칠 수 있었다.</p></article>
-        <article><span>그날의 출발점</span><strong>흰 이불을 쓴 귀신 장난</strong><p>괴담을 장난으로 바꾸면 아이들이 함께 웃을 거라 믿었다. 그 잘못된 판단이 모든 일을 시작했다.</p></article>
+        <article><span>도장 안에서의 모습</span><strong>선발전을 앞둔 선수 겸 사범</strong><p>국가대표 선발전까지 3주. 수련회를 무사히 마치고 훈련에 돌아가는 것이 무엇보다 중요했다.</p></article>
+        <article><span>김하준과의 관계</span><strong>상태를 확인하지 않고 돌아선 어른</strong><p>사고를 알리면 자신의 선수 생활도 끝날 것 같았다. 도움을 부르기보다 흔적을 감추는 쪽을 택했다.</p></article>
+        <article><span>그날의 출발점</span><strong>흰 이불을 쓴 귀신 장난</strong><p>괴담을 장난으로 바꾸면 아이들이 함께 웃을 거라 믿었다. 그 장난은 뜻밖의 사고로 이어졌다.</p></article>
       </div>
     </section>
 
@@ -128,9 +142,14 @@
         <p>자세를 고치고 수업 분위기를 잡고, 다친 곳은 없는지 살피는 일은 대부분 당신의 몫이었다. 좋은 사범이고 싶었고, 수련생들과 관장에게 아이들을 잘 챙기는 사람으로 인정받고 싶었다. 그 마음 자체는 거짓이 아니었다.</p>
       </div>
       <div class="story-block">
+        <h3>놓칠 수 없는 선발전</h3>
+        <p>당신은 사범 일을 하면서 선수 생활도 이어 가고 있다. 3주 뒤에는 오래 준비해 온 국가대표 선발전이 열린다. 몇 번이나 기회를 놓친 끝에 다시 잡은 도전이었다. 수련회를 무사히 마치고 훈련에 돌아갈 생각뿐이었다.</p>
+        <p>선발전 접수 확인서는 수련회 진행 수첩에 끼워 가방에 넣어 왔다. 수련회 진행 수첩에도 “선발전까지 3주. 이번에는 놓치지 말 것”이라고 적었다. 사고나 구설에 휘말리면 출전 준비부터 선수 생활까지 무너질 것 같았다. 이번만큼은 어떻게든 지키고 싶었다.</p>
+      </div>
+      <div class="story-block">
         <h3>알면서도 미룬 책임</h3>
         <p>고등부 수련생들은 쉽게 장난을 치고 분위기에 휩쓸렸다. 강태민이 분위기를 주도하면 민도겸은 따라 웃었고, 서은찬은 뒤에 서 있었다. 김하준은 그 사이에 끼고 싶어 했다.</p>
-        <p>하준의 웃음이 늘 편해 보이지 않는다는 것을 몇 번 느꼈다. 그래도 크게 문제 삼지 않았다. 어른이 해야 할 일을 하는 대신, 이번 수련회가 관계를 자연스럽게 풀어 주길 기대했다.</p>
+        <p>하준의 웃음이 늘 편해 보이지 않는다는 것을 몇 번 느꼈다. 그래도 크게 문제 삼지 않았다. 어른이 해야 할 일을 하는 대신, 이번 수련회가 관계를 자연스럽게 풀어 주길 기대했다. 선발전을 앞두고 시끄러운 일을 만들고 싶지 않았다.</p>
       </div>
       <div class="story-block">
         <h3>잘못된 장난</h3>
@@ -139,17 +158,17 @@
       </div>
       <div class="story-block">
         <h3>닫힌 방 안</h3>
-        <p>흰 이불을 뒤집어쓰고 수련생방 문을 세 번 두드렸다. 안에서 누군가 급히 움직이는 소리가 들리자 정체가 들킬 것 같았다. 문밖의 기척이 완전히 사라지는지 잠시 숨을 죽여 살핀 뒤, 아무도 없을 거라고 생각한 닫힌 방에 숨어 있기로 했다. 바깥 걸쇠를 풀고 방 안으로 들어갔다.</p>
-        <p>하지만 방 안에는 김하준이 있었다. 술에 취한 듯했고 얼굴에는 피가 묻어 있었다. 흰 형체를 본 하준은 크게 놀라 뒤로 물러났다. 그의 등이 키 큰 철제 캐비닛에 부딪혔다.</p>
+        <p>흰 이불을 뒤집어쓰고 수련생방 문을 세 번 두드렸다. 소리를 듣고 나온 아이들이 궁금해서 닫힌 방 문까지 열어 볼 거라고 생각했다. 그때 이불을 쓴 채 불쑥 나와 놀래킬 생각이었다. 한바탕 놀란 뒤 장난이었다는 걸 알면, 다 같이 웃으며 조금은 가까워질 거라 기대했다. 노크를 마치자마자 닫힌 방으로 가 바깥 걸쇠를 풀고 들어갔다.</p>
+        <p>방은 어두웠고, 이불에 시야도 가려져 안쪽이 잘 보이지 않았다. 당신은 문을 닫고 바로 옆에 서서 아이들이 오기를 기다렸다. 잠시 뒤 안쪽에서 기척이 나 고개를 돌리니 김하준이 있었다. 술에 취한 듯했고 얼굴에는 피가 묻어 있었다. 당신이 몸을 돌리자 하준은 크게 놀라 뒤로 물러났다. 그의 등이 키 큰 철제 캐비닛에 부딪혔다.</p>
       </div>
       <div class="story-block">
         <h3>떨어진 망치</h3>
         <p>하준의 등이 부딪힌 충격으로 캐비닛 위의 무거운 망치가 곧바로 떨어졌다. 당신은 본능적으로 손을 뻗었고 손가락이 꺾이듯 아팠다. 망치 머리는 하준의 머리 왼쪽을 가격했다. 하준은 바닥에 쓰러졌다.</p>
-        <p>당신은 굳어 버렸다. 그러나 숨과 맥을 확인하지 않았다. 머리를 다친 사람은 즉시 상태를 확인해야 한다는 것을 알고 있었다. 그래도 확인하지 않았다. 죽었다고 단정해야 도망칠 수 있었다.</p>
+        <p>당신은 굳어 버렸다. 사람부터 불러야 한다는 생각은 들었다. 하지만 그다음에는 자신의 장난, 쓰러진 아이, 3주 뒤 선발전이 한꺼번에 떠올랐다. 지금 알리면 모든 것을 잃을 것 같았다. 숨도 맥도 확인하지 않은 채 “이미 늦었어”라고 되뇌었다. 확인해서 얻은 판단이 아니라, 도망치기 위한 핑계였다.</p>
       </div>
       <div class="story-block story-block--dark">
         <h3>사고 뒤의 선택</h3>
-        <p>피 묻은 망치를 들고 방을 나왔다. ‘내가 사람을 죽였다’는 생각에 공황이 밀려왔다. 사람들을 깨우면 살인자로 몰려 감옥에 갈 것이 두려워, 사고를 숨길 시간을 벌려고 문을 닫고 바깥 걸쇠를 다시 걸었다. 망치의 피가 흰 이불 자락에 스쳤다. 당신은 망치를 관장방 문 옆에 내려놓았다. 닫힌 방의 위험을 괴담으로 덮은 장태식에게 의심이 향하기를 바랐다.</p>
+        <p>피 묻은 망치를 들고 방을 나왔다. ‘내가 사람을 죽였다’는 생각에 공황이 밀려왔다. 처벌도 두려웠지만, 선발전과 선수 생활이 한꺼번에 끝날 것 같다는 생각을 떨칠 수 없었다. 사고를 숨길 시간을 벌려고 문을 닫고 바깥 걸쇠를 다시 걸었다. 망치의 피가 흰 이불 자락에 스쳤다. 당신은 망치를 관장방 문 옆에 내려놓았다. 망치가 관장방 앞에서 발견되면 장태식에게 의심이 향할 것이라고 생각했다.</p>
         <p>뒤돌아서는 동안 닫힌 방에서 아주 약한 소리가 났다.</p>
       </div>
       <div class="story-block story-block--danger">
@@ -159,8 +178,8 @@
       </div>
       <div class="story-block">
         <h3>증거를 숨기다</h3>
-        <p>관리실에서 붕대를 꺼낸 뒤, 피 묻은 흰 이불을 짐 상자 사이에 숨기려고 연결문을 통해 창고로 들어갔다. 그곳에서 서은찬과 눈이 마주쳤고, 은찬은 당신의 흰 형체를 보고 쓰러졌다.</p>
-        <p>정체가 드러날까 두려워 급히 달아나다 이불 자락이 상자 모서리에 걸려 찢어졌다. 천 조각을 상자 뒤로 밀어 넣고, 남은 이불은 반대편 다목적실의 행사 물품 사이에 숨겼다. 사범방으로 돌아온 뒤 가져온 붕대로 손가락을 고정했다.</p>
+        <p>관리실에서 붕대를 꺼낸 뒤, 피 묻은 흰 이불을 짐 상자 사이에 숨기려고 연결문을 통해 창고로 들어갔다. 그곳에 서은찬이 있었다. 은찬은 흰 이불을 쓴 당신 쪽으로 고개를 돌리더니 쓰러졌다. 당신의 얼굴을 알아봤는지는 알 수 없었다.</p>
+        <p>은찬까지 당신을 알아보고 장난을 말하면 하준의 사고도 드러날 것 같았다. “놀라서 잠깐 쓰러진 것뿐이야. 곧 일어나겠지.” 그렇게 넘겨짚고, 숨을 확인하거나 사람을 부르지 않았다. 정체가 드러날까 두려워 급히 달아나다 이불 자락이 상자 모서리에 걸려 찢어졌다. 천 조각을 상자 뒤로 밀어 넣고, 남은 이불은 반대편 다목적실의 행사 물품 사이에 숨겼다. 사범방으로 돌아온 뒤 가져온 붕대로 손가락을 고정했다.</p>
         <p class="ending-line">당신은 김하준을 죽이려 하지 않았다. 하지만 사고 뒤 상태를 확인하지 않은 채 문을 다시 잠갔고, 이후 살아 있을 가능성을 알고도 돌아가지 않았다.</p>
       </div>
     </section>
@@ -173,8 +192,8 @@
       <p class="timeline-note"><strong>읽는 법</strong> 배경 행동은 시간 구간으로 묶었고, 사건과 판단에 중요한 시각은 문장 안에 정확히 표시했습니다.</p>
       <ol class="timeline-list">
         <li><div class="timeline-time" aria-label="21시 50분부터 22시 20분까지">21:50<br><span>~22:20</span></div><div><span class="location">실외 다목적실·출입구·사범방</span><p>다목적실에서 여분의 흰 이불을 가져와 사범방에 숨겼다. 수련생들을 놀라게 해 함께 웃게 만들 생각이었다. <strong>22:20</strong> 흰 이불을 뒤집어쓰고 수련생방 앞으로 나갔다.</p></div></li>
-        <li class="timeline-list__critical"><div class="timeline-time" aria-label="22시 20분부터 22시 29분까지">22:20<br><span>~22:29</span></div><div><span class="location">수련생방 앞·닫힌 방</span><p><strong>22:22</strong> 수련생방 문을 세 번 두드렸다. 정체가 들킬까 봐 문밖의 기척이 완전히 사라지는지 잠시 숨을 죽여 살핀 뒤, <strong>22:24</strong> 닫힌 방으로 달아나 바깥 걸쇠를 풀고 안에 숨었다. <strong>22:25</strong> 흰 형체를 본 하준이 물러나다 캐비닛에 부딪혔고, 그 충격으로 망치가 곧바로 떨어져 하준의 머리 왼쪽을 가격했다. 당신은 망치를 붙잡으려다 손가락을 삐었다. <strong>22:25~22:29</strong> 공황에 빠져 숨과 맥을 확인하지 않았고, <strong>22:29</strong> 피 묻은 망치를 들고 나와 문을 다시 잠갔다.</p></div></li>
-        <li class="timeline-list__critical"><div class="timeline-time" aria-label="22시 29분부터 22시 39분까지">22:29<br><span>~22:39</span></div><div><span class="location">중앙 복도·관리실·창고·다목적실</span><p><strong>22:31</strong> 관장방 문 옆에 망치를 내려놓았다. 잠시 의식을 잃었던 김하준은 이 무렵 깨어나 닫힌 방 안에서 마지막 구조 요청의 첫 묶음인 약한 세 번의 노크를 시작했다. 하준은 <strong>22:31~22:36</strong> 세 번씩 간헐적으로 노크를 반복했지만 당신은 돌아가지 않았다. <strong>22:33</strong> 관리실에서 붕대를 챙긴 뒤, 피 묻은 이불을 숨기려고 연결문을 통해 창고로 들어갔다. <strong>22:35</strong> 창고에서 서은찬과 눈이 마주쳐 은찬이 쓰러지는 것을 보았다. 급히 달아나다 이불이 상자 모서리에 걸려 찢어졌고, <strong>22:36</strong> 천 조각을 상자 뒤로 밀어 넣었다. <strong>22:38</strong> 남은 이불을 반대편 다목적실에 숨겼다. <strong>22:39 이후</strong> 사범방으로 돌아와 붕대로 손가락을 고정했고 아무에게도 알리지 않았다.</p></div></li>
+        <li class="timeline-list__critical"><div class="timeline-time" aria-label="22시 20분부터 22시 29분까지">22:20<br><span>~22:29</span></div><div><span class="location">수련생방 앞·닫힌 방</span><p><strong>22:22</strong> 수련생방 문을 세 번 두드리고 곧바로 닫힌 방으로 가 걸쇠를 풀고 들어갔다. 아이들이 궁금해서 문을 열면 흰 이불을 쓴 채 나와 놀래킨 뒤, 함께 웃으며 어울리게 할 생각이었다. 어둡고 이불에 시야가 가려져 안쪽은 살피지 못한 채, 문을 닫고 옆에서 아이들을 기다렸다. <strong>22:25</strong> 안쪽의 기척에 몸을 돌리다 하준을 발견했다. 하준은 놀라 물러나다 캐비닛에 부딪혔고, 그 충격으로 망치가 곧바로 떨어져 하준의 머리 왼쪽을 가격했다. 당신은 망치를 붙잡으려다 손가락을 삐었다. <strong>22:25~22:29</strong> 사고가 알려지면 선발전과 선수 생활을 잃을 것 같아 공황에 빠졌다. 숨과 맥을 확인하지 않았고, <strong>22:29</strong> 피 묻은 망치를 들고 나와 문을 다시 잠갔다.</p></div></li>
+        <li class="timeline-list__critical"><div class="timeline-time" aria-label="22시 29분부터 22시 39분까지">22:29<br><span>~22:39</span></div><div><span class="location">중앙 복도·관리실·창고·다목적실</span><p><strong>22:31</strong> 관장방 문 옆에 망치를 내려놓았다. 뒤쪽 닫힌 방 방향에서 약한 세 번의 노크를 들었다. 하준이 살아 있을지도 모른다고 생각했지만, 돌아가면 자신의 장난도 드러난다는 두려움에 외면했다. 이후 다른 장소로 이동했으므로 노크가 언제까지 이어졌는지는 모른다. <strong>22:33</strong> 관리실에서 붕대를 챙긴 뒤, 피 묻은 이불을 숨기려고 연결문을 통해 창고로 들어갔다. <strong>22:35</strong> 창고에 있던 서은찬이 당신 쪽을 보더니 쓰러졌다. 당신의 얼굴을 알아봤는지는 알 수 없었다. 곧 깨어날 것이라고 넘겨짚고, 정체가 드러날까 봐 상태를 확인하지 않았다. 급히 달아나다 이불이 상자 모서리에 걸려 찢어졌고, <strong>22:36</strong> 천 조각을 상자 뒤로 밀어 넣었다. <strong>22:38</strong> 남은 이불을 반대편 다목적실에 숨겼다. <strong>22:39 이후</strong> 사범방으로 돌아와 붕대로 손가락을 고정했고 아무에게도 알리지 않았다.</p></div></li>
         <li><div class="timeline-time">다음 날<br>아침</div><div><span class="location">닫힌 방 앞</span><p>걸쇠가 풀리고 김하준의 시신이 발견되는 것을 지켜봤다. 아무 말도 하지 않았다.</p></div></li>
       </ol>
     </section>
@@ -220,7 +239,7 @@
         <span class="section-number">07</span>
         <div><p>OPENING STATEMENT</p><h2>첫 진술</h2></div>
       </div>
-      <div class="statement-note"><strong>게임 시작 시 읽습니다.</strong><p>자신의 차례가 오면 아래 내용을 다른 플레이어에게 그대로 읽어 주세요.</p></div>
+      <div class="statement-note"><strong>오프닝에서는 캐릭터 카드의 첫 진술 요약을 읽습니다.</strong><p>아래는 그 진술의 전체 내용입니다. 비밀을 숨기려 사실과 다르게 말한 부분이 있습니다. 자신이 실제로 기억하는 행동은 ‘배경’과 ‘그날 밤의 행동’을 기준으로 확인하세요.</p></div>
       <blockquote class="statement-card" id="statementText">
         <p>“저는 어젯밤 대부분 사범방에 있었습니다. 수련원이 낡아서 그런지 작은 소리는 계속 났어요. 문 삐걱거리는 소리도 났고, 복도 쪽에서 뭐가 울리는 것 같기도 했습니다. 그런데 누가 위험하다고 느낄 만큼 큰 소리는 듣지 못했습니다.</p>
         <p>저녁에 관장님이 닫힌 방 이야기하신 건 기억합니다. 그 방은 바깥에 걸쇠도 있고, 안에 오래된 물건들도 있어서 위험해 보였어요. 그래서 아이들이 가까이 가지 않는 게 맞다고 생각했습니다.”</p>
@@ -235,6 +254,6 @@
   </main>
 
   <button class="top-button" id="topButton" type="button" tabindex="-1" aria-hidden="true" aria-label="맨 위로 이동" title="맨 위로">↑</button>
-  <script src="script.js?v=reader-tutorial-1"></script>
+  <script src="script.js?v=feedback-20260920"></script>
 </body>
 </html>
